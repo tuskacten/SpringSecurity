@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Admin Dashboard</title>
+</head>
+<body>
+<h1>Welcome to the Admin Dashboard!</h1>
+<p th:text="${message}">Placeholder for a welcome message</p>
+</body>
+<form th:action="@{/logout}" method="post">
+  <input type="submit" value="Sign Out"/>
+</form>
+</html>
